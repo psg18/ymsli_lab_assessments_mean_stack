@@ -31,7 +31,7 @@ app.get('/product', function(req, res) {
         if(err) {
             res.send('error occured')
         } else {
-            console.log(products);
+            error.log(products);
             res.json(products);
         }
     });
@@ -46,7 +46,7 @@ app.get('/product/:category', function(req, res) {
         if(err) {
             res.send('error occured')
         } else {
-            console.log(products);
+            error.log(products);
             res.json(products);
         }
     });
@@ -56,3 +56,4 @@ app.listen(port, function() {
   console.log('app listening on port ' + port);
 
 });
+
